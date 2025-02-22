@@ -1,106 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 * {
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;;
 }
 
-.navbar .btn,
-.navbar .nav-link,
-.navbar .dropdown-toggle,
-.navbar .input-group-text {
-    color: white;
+a{
+    color: black;
 }
 
-.navbar{
-    background-color: rgb(27, 27, 27);
+.navbar-brand img {
+    height: 57px;
+    width: 140px;
+    padding: 0px;
 }
 
-.nav-container {
-    margin: 0px 30px;
+.navbar .container-fluid,
+#hero {
+    padding: 0 40px;
 }
 
-.equal-size {
-    padding: 3px 10px;
-    height: 32px;
-
-    border-top-right-radius: 0%;
-    border-bottom-right-radius: 0%;
-}
-
-.equal-size-search{
-    height: 32px;
-    border-top-left-radius: 0%;
-    border-bottom-left-radius: 0%;
-}
-
-.search-icn{
-    height: 32px;
-}
-
-.search-box{
-    width: 640px;
-}
-
-.nav-item{
-    padding: 0 7px;
-}
-
-.nav-item a,
-.nav-item button{
-    font-weight: 600;
-    font-size: 14px
-}
-
-.nav-dropdown1 .dropdown-item{
-    padding: 12px 16px;
+.nav-link {
+    padding: 7.5px 18px;
+    font-weight: 400;
+    color: black;
+    margin-left: 10px;
     font-size: 16px;
 }
 
-.nav-line{
-    width: 1px;
-    height: 30px;
+.nav-link{
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link::after {
+    content: "";
     position: absolute;
-    background-color: grey;
-    top: 15px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; 
+    background-color: black; 
+    transition: width 0.3s ease-in-out;
 }
 
-.nav-item:hover{
-    background-color: rgb(43, 41, 41);
-    border-radius: 20px;
+.nav-link:hover::after {
+    width: 100%;
 }
 
-.no-hover-nav:hover{
-    background-color: rgb(17, 16, 16);
-    border-radius: 0;
+.navbtn-icn{
+    font-size: 10px;
+    padding-left: 5px;
 }
 
-.nav-dropdown1 .dropdown-item{
-    font-size: 14px;
+#top-selling,
+#top-categories{
+    margin: 100px 40px;
+
 }
 
-.search-results {
+#top-selling .card{
+    background-color: rgb(250, 248, 248);
+}
+
+#top-selling .card img{
+    width: 170px;
+    margin: auto;
+}
+
+.topsell-btn{
+    background-color:rgb(115, 145, 55);
+    width: 100%;
+    margin-top: 10px;
+}
+
+.card-discount{
+    background-color:rgb(115, 145, 55);
+    padding: 4px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+/* Position the text options above the carousel */
+.text-options {
     position: absolute;
-    top: 50px;
-    left: 230px;
-    width:50%;
-    border: 1px solid #ccc;
-    padding: 20px 30px;
-    max-height: 500px;
-    overflow-y: auto;
-    display: none;
-    background-color: black;
-    color: #fff;
-
-}
-
-.movie-card {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 30px;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+  
+  .text-options button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    background: none;
+    border: none;
     cursor: pointer;
-}
-
+  }
+  
+  .text-options button:hover {
+    text-decoration: underline;
+  }
+  
