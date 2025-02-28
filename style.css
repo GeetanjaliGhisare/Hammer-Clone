@@ -89,7 +89,7 @@ a{
     z-index: 10;
   }
   
-  .text-options button {
+    .text-options button {
     font-size: 1.2rem;
     font-weight: bold;
     color: #000;
@@ -101,4 +101,5 @@ a{
   .text-options button:hover {
     text-decoration: underline;
   }
-  
+
+
